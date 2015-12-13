@@ -100,3 +100,15 @@ else
     // TODO: Panic. Call the admins. Then go to the RISC admin console and generate a new API key.
 end
 ```
+
+
+## Pre-authenticate User for a Specific Browser (optional)
+
+The `authenticate` API call can be used when a user has a high RISC score on a particular browser, but you are certain it is the correct user. This API call will effectively set the RISC score back to 0% the next time the user does a RISC snapshot from that specific browser. This can be used in a variety of scenarios, the most common being after you have performed a successful second-factor authentication for that user, and you want his next RISC snapshot to be successful.
+
+You will need a valid user ID and browser ID to call this API function. The browser ID will be contained in the most recent RISC snapshot result.
+
+```
+SAMPLE CODE SOON
+ ```
+
